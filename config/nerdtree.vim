@@ -45,5 +45,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 " let g:nerdtree_tabs_synchronize_focus=0
 " 是否自动开启nerdtree
 " thank to @ListenerRi, see https://github.com/wklken/k-vim/issues/165
-let g:nerdtree_tabs_open_on_console_startup=0
-let g:nerdtree_tabs_open_on_gui_startup=0
+" let g:nerdtree_tabs_open_on_console_startup=0
+" let g:nerdtree_tabs_open_on_gui_startup=0
+

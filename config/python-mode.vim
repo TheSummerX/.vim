@@ -18,4 +18,7 @@
 " - Go to definition (``<C-c>g`` for `:RopeGotoDefinition`)
 " - And more, more ...
 
+"Turn on the whole plugin
+let g:pymode=1
+
 let python_highlight_all=1

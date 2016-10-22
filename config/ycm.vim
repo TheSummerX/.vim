@@ -42,8 +42,9 @@ let g:ycm_filetype_whitelist = {
     \ 'c': 1,
     \ 'cpp': 1,
     \ 'python': 1,
-    \ 'java' : 1,
-    \ 'md' : 1
+    \ 'java': 1,
+    \ 'html': 1,
+    \ 'xml': 1
 \}
 
 " 黑名单,不启用
