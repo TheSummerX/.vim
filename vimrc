@@ -313,6 +313,8 @@ if has("autocmd")
     autocmd FileType make set noexpandtab
     "txt file auto insert linebreak after 78 char
     autocmd FileType txt set tw=78 fo+=Mm
+    "Markdown file set textwidth=0,visually wrapped.
+    autocmd FileType markdown.mkd set tw=0
     autocmd FileType python set tabstop=4 shiftwidth=4 expandtab
     autocmd FileType python setlocal colorcolumn=80
     autocmd FileType ruby,javascript,html,css,xml set tabstop=2 shiftwidth=2 softtabstop=2 expandtab

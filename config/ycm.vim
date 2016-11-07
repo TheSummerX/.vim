@@ -6,7 +6,7 @@
 " 直接触发自动补全 insert模式下
 " let g:ycm_key_invoke_completion = '<C-Space>'
 
-let g:ycm_min_num_of_chars_for_completion = 2   "最小开始补全的字符数
+let g:ycm_min_num_of_chars_for_completion = 1   "最小开始补全的字符数
 
 let g:ycm_complete_in_comments = 1  "在注释输入中也能补全
 let g:ycm_complete_in_strings = 1   "在字符串输入中也能补全
