@@ -5,9 +5,13 @@ let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
 
 let g:UltiSnipsUsePythonVersion = 2
 
-let g:UltiSnipsExpandTrigger = '<C-Space>'
+" '<C-Space>'无法正常使用，改用'<leader><TAB>'
+let g:UltiSnipsExpandTrigger = '<leader><TAB>'
+" 候选mapping
+" let g:UltiSnipsExpandTrigger = '<C-space>'
+" let g:UltiSnipsExpandTrigger = '<leader><Space>'
+
 let g:UltiSnipsListSnippets = '<C-tab>'
 let g:UltiSnipsJumpForwardTrigger = '<C-j>'
 let g:UltiSnipsJumpBackwardTrigger = '<C-k>'
 
-inoremap <c-x><c-k> <c-x><c-k>

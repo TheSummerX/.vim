@@ -306,8 +306,8 @@ if has("autocmd")
     "filetype plugin on
     autocmd BufNewFile,BufRead *.py,*.pyw set filetype=python
     autocmd BufNewFile,BufRead *.coffee set filetype=coffee
-    autocmd BufRead,BufNewFile *.md,*.mkd,*.markdown set filetype=markdown.mkd
-    autocmd BufRead,BufNewFile *.part set filetype=html
+    autocmd BufNewFile,BufRead *.md,*.mkd,*.markdown set filetype=markdown.mkd
+    autocmd BufNewFile,BufRead *.part set filetype=html
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
     "Makefile使用tab不用空格
     autocmd FileType make set noexpandtab

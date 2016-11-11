@@ -1,23 +1,31 @@
-"youcompleteme  默认tab  s-tab 和自动补全冲突
-"let g:ycm_key_list_select_completion = ['<c-n>']
-"let g:ycm_key_list_select_completion = ['<Down>']
-"let g:ycm_key_list_previous_completion = ['<c-p>']
-"let g:ycm_key_list_previous_completion = ['<Up>']
-" 直接触发自动补全 insert模式下
-" let g:ycm_key_invoke_completion = '<C-Space>'
+" 自动触发待选补全项，默认值'1'
+let g:ycm_auto_trigger = 1
+
+" 强制触发自动补全(insert模式下)，默认值'<C-Space>'
+" 开启auto_trigger时可用'.', '->', '::'触发
+" 且与Ultisnips冲突，故弃用此mapping
+" let g:ycm_key_invoke_completion = ''
+
+" 补全mapping
+" Defaults are as follows:
+" let g:ycm_key_list_select_completion = ['<TAB>','<Down>']
+" let g:ycm_key_list_prevVious_completion = ['<S-TAB>','<Up>']
+" 只用<TAB>选择
+let g:ycm_key_list_select_completion = ['<TAB>']
+let g:ycm_key_list_prevVious_completion = ['<S-TAB>']
 
 let g:ycm_min_num_of_chars_for_completion = 1   "最小开始补全的字符数
 
-let g:ycm_complete_in_comments = 1  "在注释输入中也能补全
-let g:ycm_complete_in_strings = 1   "在字符串输入中也能补全
+let g:ycm_complete_in_comments = 1  "在注释输入中补全，默认值'0'
+let g:ycm_complete_in_strings = 1   "在字符串输入中补全，默认值'1'
 
 let g:ycm_use_ultisnips_completer = 1 "提示UltiSnips
 
-let g:ycm_collect_identifiers_from_comments_and_strings = 1   "注释和字符串中的文字也会被收入补全
-let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_collect_identifiers_from_comments_and_strings = 1   "注释和字符串中的文字会被收入补全，默认值'0'
+let g:ycm_collect_identifiers_from_tags_files = 1   "从tags_files收入补全，默认值'0'
 
 " 开启语法关键字补全
-let g:ycm_seed_identifiers_with_syntax = 1 "语言关键字补全, 不过python关键字都很短，所以，需要的自己打开
+let g:ycm_seed_identifiers_with_syntax = 1 "语言关键字补全,默认值'0'
 
 " 跳转到定义处, 分屏打开
 let g:ycm_goto_buffer_command = 'horizontal-split'
