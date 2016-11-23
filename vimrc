@@ -187,12 +187,15 @@ let &showbreak='+++'
 
 ""=====设置自动折叠=====                          =====folding
 ""=====启动时不折叠=====
-set foldlevel=100
+set foldlevelstart=99
+" 默认折叠等级为0，折叠开启
+" set foldlevel=0
+" set foldenable
 ""=====折叠规则为语法折叠=====
 ""indent缩进折叠,marker标志折叠
 set foldmethod=syntax
 ""=====折叠选项=====
-set foldcolumn=2
+set foldcolumn=5
 ""=====光标位置自动打开或关闭折叠=====
 set foldopen=all
 set foldclose=all
@@ -309,18 +312,27 @@ if has("autocmd")
     autocmd BufNewFile,BufRead *.md,*.mkd,*.markdown set filetype=markdown.mkd
     autocmd BufNewFile,BufRead *.part set filetype=html
     autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
+    autocmd BufNewFile,BufRead *.js set filetype=javascript
+
     "Makefile使用tab不用空格
     autocmd FileType make set noexpandtab
+
     "txt file auto insert linebreak after 78 char
     autocmd FileType txt set tw=78 fo+=Mm
+
     "Markdown file set textwidth=0,visually wrapped.
     autocmd FileType markdown.mkd set tw=0
+
     autocmd FileType python set tabstop=4 shiftwidth=4 expandtab
     autocmd FileType python setlocal colorcolumn=80
+    autocmd FileType python set foldmethod=indent
+
     autocmd FileType ruby,javascript,html,css,xml set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+
     autocmd FileType haskell setlocal expandtab shiftwidth=2 softtabstop=2
     autocmd FileType haskell setlocal commentstring=--/ %s
     autocmd FileType haskell setlocal nospell
+
     " disable showmatch when use > in php
     autocmd BufWinEnter *.php set mps-=<:>
 

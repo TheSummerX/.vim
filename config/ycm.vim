@@ -51,7 +51,13 @@ let g:ycm_filetype_whitelist = {
     \ 'cpp': 1,
     \ 'python': 1,
     \ 'java': 1,
+    \ 'markdown': 1,
     \ 'html': 1,
+    \ 'xhtml': 1,
+    \ 'css': 1,
+    \ 'javascript': 1,
+    \ 'php': 1,
+    \ 'json': 1,
     \ 'xml': 1
 \}
 

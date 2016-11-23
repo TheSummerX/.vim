@@ -1,6 +1,6 @@
 "let g:UltiSnipsEditSplit = normal   "horizontal/vertical/context
 
-let g:UltiSnipsSnippetDirectories=['Ultisnips']
+let g:UltiSnipsSnippetDirectories=['UltiSnips']
 let g:UltiSnipsSnippetsDir = '~/.vim/UltiSnips'
 
 let g:UltiSnipsUsePythonVersion = 2
